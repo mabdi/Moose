@@ -32,7 +32,7 @@ that refers to it are updated accordingly.
 "
 Class {
 	#name : #FMMultivalueLink,
-	#superclass : #Collection,
+	#superclass : #OrderedCollection,
 	#instVars : [
 		'values',
 		'owner',
