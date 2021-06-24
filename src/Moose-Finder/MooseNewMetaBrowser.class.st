@@ -49,9 +49,7 @@ MooseNewMetaBrowser class >> menuLabel [
 MooseNewMetaBrowser class >> open [
 
 	<script>
-	^ (self on: (MooseModel withAllSubclasses reject: [ :model | 
-			    model isDeprecated or: [ model isTestModel ] ]) flatten)
-		  openWithSpec
+	^ (self on: FamixModel meta) openWithSpec
 ]
 
 { #category : #specs }
