@@ -7,24 +7,10 @@ Class {
 	#category : #'Moose-Finder'
 }
 
-{ #category : #'world menu' }
-MooseMetaBrowser class >> menuBrowseMetaOn: aBuilder [
-
-	<worldMenu>
-	^ (MooseModel developerTool: self menuCommandOn: aBuilder)
-		  order: 35;
-		  help: 'Famix compatiblity meta-model browser';
-		  withSeparatorAfter;
-		  yourself
-]
-
-{ #category : #'world menu' }
-MooseMetaBrowser class >> menuLabel [
-	^'Meta Browser'
-]
-
 { #category : #'instance creation' }
 MooseMetaBrowser class >> open [
+
+	<script>
 	^ self new openOn: MooseModel meta
 ]
 
