@@ -1,6 +1,6 @@
 Extension { #name : #FamixTagTestModel }
 
 { #category : #'*Moose-Finder' }
-FamixTagTestModel class >> isTestModel [
+FamixTagTestModel classSide >> isTestModel [
 	^ true
 ]
